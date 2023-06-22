@@ -1,3 +1,11 @@
+@import './stylesheets/layout.scss';
+@import './stylesheets/planetsIndex.scss';
+
+.loading-tag {
+  margin: auto;
+  font-size: 40px;
+}
+
 .App {
   text-align: center;
 }

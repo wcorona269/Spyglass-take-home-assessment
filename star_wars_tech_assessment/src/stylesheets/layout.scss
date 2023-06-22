@@ -1,0 +1,35 @@
+@font-face {
+	font-family: Soloist;
+	src: url("Soloist-Z6M8.otf") format("opentype");
+}
+
+body {
+	font-size: 20px;
+	font-family: Soloist;
+	background-color: black;
+	color: white;
+}
+
+.outer-body {
+	font-family: Soloist;
+	display: grid;
+	grid-template-columns: 1fr 60% 1fr;
+}
+
+.inner-body {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-column: 2;
+}
+
+#heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	border-bottom: 1px solid white;
+}
+

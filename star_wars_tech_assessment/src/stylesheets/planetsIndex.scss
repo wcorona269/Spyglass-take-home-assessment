@@ -1,0 +1,18 @@
+.planets-index {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-flow: auto;
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.planet-list-index-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 20px;
+}
