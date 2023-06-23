@@ -1,0 +1,89 @@
+@import './variables.scss';
+
+.planet-profile-page {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.resident-list-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	margin: 20px;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px;
+
+	transition: box-shadow .3s ease-in-out;
+	transition: margin-top .3s ease-in-out;
+
+	&:hover {
+		box-shadow: white 0px 14px 28px, white 0px 10px 10px;
+		margin-top: 10px;
+	}
+}
+
+.resident-list-item h2 {
+	color: #FFE81F;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+
+.resident-details-bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	font-size: 20px;
+	color: red;
+}
+
+.planet-info-bar {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	border-radius: 40px;
+	border: 1px solid white;
+	padding: 10px;
+	margin: 50px;
+}
+
+.planet-info-bar h2 {
+	padding: 10px;
+	text-decoration: underline;;
+}
+
+.planet-details-bar {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.planet-category-detail {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center !important;
+}
+
+
+#planet-name {
+	font-size: 100px;
+	border: 10px solid red;
+	border-radius: 40px;
+	padding: 40px;
+	text-decoration: underline;
+}
+
+#residents-header {
+	text-decoration: underline;
+}

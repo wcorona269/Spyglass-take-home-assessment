@@ -1,9 +1,25 @@
 @import './stylesheets/layout.scss';
 @import './stylesheets/planetsIndex.scss';
+@import './stylesheets/planetProfile.scss';
 
 .loading-tag {
-  margin: auto;
-  font-size: 40px;
+  margin-top: 5rem;
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#heading {
+  color: #FFE81F;
+}
+
+.loading-tag h1 {
+  margin-bottom: 2rem;
+  color: red;
 }
 
 .App {

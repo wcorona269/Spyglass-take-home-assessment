@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .planets-index {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -7,12 +9,31 @@
 }
 
 .planet-list-index-item {
+	color: #FFE81F;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 200px;
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid white;
 	border-radius: 20px;
+	transition: box-shadow .3s ease-in-out;
+	transition: margin-top .3s ease-in-out;
+
+	&:hover {
+		box-shadow: white 0px 14px 28px, white 0px 10px 10px;
+		margin-top: 0px;
+	}
+}
+
+.planet-list-index-item p {
+	color: red;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }

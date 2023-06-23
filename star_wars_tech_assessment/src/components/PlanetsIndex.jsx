@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import PlanetIndexListItem from './PlanetIndexListItem';
+import LoadingMessage from './LoadingMessage';
 
 const PlanetsIndex = () => {
 	const [planets, setPlanets] = useState([]);
@@ -33,6 +34,7 @@ const PlanetsIndex = () => {
 				}
 			}
 			catch(error) {
+				console.error('')
 			}
 		}
 
@@ -41,9 +43,7 @@ const PlanetsIndex = () => {
 
 	if (isLoading === true) {
 		return (
-			<div className='loading-tag'>
-				Loading...
-			</div>
+			<LoadingMessage/>
 		)
 	}
 
