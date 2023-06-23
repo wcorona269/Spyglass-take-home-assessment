@@ -6,8 +6,9 @@ const LoadingMessage = () => {
 			<h1 >
 				Loading...
 			</h1>
+				<br />
 			<div>
-				Patience you must have, my young Padawan.
+				"Patience you must have, my young Padawan."
 				<br />
 				<br />
 				- Yoda
